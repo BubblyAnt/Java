@@ -40,7 +40,10 @@ public class ArrayStack<E> {
 
     public E pop() {
         if (top == -1) throw new EmptyStackException();
-        return stack[top--];
+        
+        E returnedValue = stack[top];
+        stack[top--] = null;
+        return returnedValue;
     }
 
     public E peek() {
