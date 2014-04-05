@@ -26,7 +26,6 @@ public class ArrayStack<E> {
     }
 
     public void clear() {
-      
         stack = (E[]) new Object[capacity];
         top = -1;
     }
