@@ -1,5 +1,4 @@
 
-
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
@@ -31,6 +30,7 @@ public class ArrayStack<E> {
         for (int i = 0; i <= top; i++) {
             stack[i] = null;
         }
+        stack = (E[]) new Object[capacity];
         top = -1;
     }
 
