@@ -37,6 +37,7 @@ public class CommandRunner {
                         output.write("Stack - " + myStack.toString() + LINE_SEPARATOR);
                         break;
                     case "clear":
+                        myStack.clear();
                         break;
                     default:
                         throw new DataFormatException("unknown command " + commandLine[0]);
