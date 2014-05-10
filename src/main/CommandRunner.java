@@ -37,7 +37,10 @@ public class CommandRunner {
             }
         }
 }
-    
+    /**
+     * @param commandLine  - string splitted to array, contains command and also can contains its arguments
+     * @param myStack - my realization of ArrayStack, myStack will perform commandLine command
+     */
     public static String proceed(String[] commandLine, ArrayStack<Integer> myStack) throws DataFormatException {
     	String result = null;  
     	switch (commandLine[0]){
